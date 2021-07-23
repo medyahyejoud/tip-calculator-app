@@ -1,0 +1,25 @@
+$white: hsl(0, 0%, 100%);
+$primary: hsl(172, 67%, 45%);
+$primary-hover: hsl(173, 61%, 77%);
+$red: hsl(0, 75%, 58%);
+
+$dark-primary: hsl(183, 100%, 15%);
+$light-primary: hsl(185, 41%, 84%);
+
+$dark-gray: hsl(186, 14%, 43%);
+$dark-gray-2: hsl(184, 14%, 56%);
+$light-gray: hsl(189, 41%, 97%);
+
+$spacer: 1rem;
+
+$border-radius: 1.25rem;
+$border-radius-sm: $border-radius / 2;
+$border-radius-xs: $border-radius / 4;
+$border-radius-lg: $border-radius * 2;
+
+$box-shadow: 0 0 30px rgba($dark-primary, 0.1);
+
+$font-size-base: 1rem;
+$font-size-base-sm: $font-size-base * 0.85;
+$font-size-base-md: $font-size-base * 1.25;
+$font-size-base-lg: $font-size-base * 2;

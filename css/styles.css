@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  line-height: 1.5;
+  background: #c5e4e7;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+h2 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #f4fafa;
+}
+
+p {
+  font-size: 0.765rem;
+  font-weight: 700;
+  color: #7f9c9f;
+}
+
+.btn {
+  cursor: pointer;
+  background: #00494d;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border-radius: 0.3125rem;
+  padding: 0.33333rem 2rem;
+}
+
+.btn:hover {
+  background-color: #a1e8e0;
+  color: #00494d;
+}
+
+.btn:focus {
+  background-color: #26c0ab;
+  color: #00494d;
+  outline: 2px solid #00494d;
+}
+
+.page-wrapper {
+  width: clamp(750px, 80%, 950px);
+  margin: 0 auto;
+  min-height: 80vh;
+  background: #c5e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.logo {
+  width: 80px;
+}
+
+.main-section {
+  margin: 2rem 0;
+  background: white;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  -webkit-box-shadow: 0 0 30px rgba(0, 73, 77, 0.1);
+          box-shadow: 0 0 30px rgba(0, 73, 77, 0.1);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.inputs {
+  padding: 0.66667rem;
+}
+
+input:focus,
+input:focus-within,
+input:focus-visible {
+  outline: 2px solid #26c0ab;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-form {
+  background-color: #f4fafa;
+  border-radius: 0.3125rem;
+  padding: 0.33333rem 1rem 0.33333rem 2.5rem;
+  color: #00494d;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: right;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.input-group svg {
+  position: absolute;
+  top: 36px;
+  left: 15px;
+}
+
+.custom-tip-input {
+  width: 100%;
+  background-color: #f4fafa;
+  border-radius: 0.3125rem;
+  padding: 0.33333rem 0.25rem;
+  color: #00494d;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.custom-tip-input::-webkit-input-placeholder {
+  color: #00494d;
+  opacity: 0.7;
+}
+
+.custom-tip-input:-ms-input-placeholder {
+  color: #00494d;
+  opacity: 0.7;
+}
+
+.custom-tip-input::-ms-input-placeholder {
+  color: #00494d;
+  opacity: 0.7;
+}
+
+.custom-tip-input::placeholder {
+  color: #00494d;
+  opacity: 0.7;
+}
+
+.input-label,
+.tips-label {
+  font-weight: 700;
+  color: #5e7a7d;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input-label p,
+.tips-label p {
+  opacity: 0;
+}
+
+.tips {
+  margin: 2rem 0;
+}
+
+.tips .tips-select {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.66667rem;
+}
+
+.results {
+  background-color: #00494d;
+  padding: 2rem;
+  color: white;
+  border-radius: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tip-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-reset-lg {
+  width: 100%;
+  background-color: #26c0ab;
+  color: #00494d;
+  font-size: 1.125rem;
+  padding: 0.5rem 2rem;
+}
+
+.btn-reset-lg:focus {
+  outline: 2px solid #26c0ab;
+}
+
+#not-zero-active p {
+  opacity: 1;
+  color: #e44444;
+}
+
+#not-zero-active .input-form::-webkit-input-placeholder {
+  color: #d61f1f;
+  opacity: 1;
+}
+
+#not-zero-active .input-form:-ms-input-placeholder {
+  color: #d61f1f;
+  opacity: 1;
+}
+
+#not-zero-active .input-form::-ms-input-placeholder {
+  color: #d61f1f;
+  opacity: 1;
+}
+
+#not-zero-active .input-form::placeholder {
+  color: #d61f1f;
+  opacity: 1;
+}
+
+#not-zero-active .input-form:focus,
+#not-zero-active .input-form:focus-within,
+#not-zero-active .input-form:focus-visible,
+#not-zero-active .input-form {
+  outline: 2px solid #e44444;
+}
+
+@media screen and (max-width: 820px) {
+  .page-wrapper {
+    width: 70%;
+  }
+  .main-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .btn-reset-lg {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .header {
+    margin: 2rem 0;
+  }
+  .page-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .main-section {
+    margin: 1rem 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .tips .tips-select {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
